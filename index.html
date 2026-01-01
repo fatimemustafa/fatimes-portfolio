@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fatime Mustafa</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      #image-container img {
+        width: 150px;
+        margin: 10px;
+        display: none;
+      }
+      button {
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main bg-[#0A192F] text-white font-sans">
+      <header
+        class="fixed inset-x-0 top-5 z-50 mx-4 md:mx-auto md:max-w-6xl p-3 bg-[#0A192F] rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.6)] transform transition duration-300 hover:shadow-[0_0_25px_rgba(0,0,0,0.8)]"
+      >
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="header p-2 flex flex-wrap justify-between items-center">
+            <div class="logo">
+              <img
+                src="../assets/images/portfoliologo.png"
+                class="pl-2 w-24 sm:w-36 h-8 sm:h-12 object-contain"
+                alt="#"
+              />
+              <!-- Fatime – emri, që e bën brandin personal dhe unik.
+                        Innovative – tregon se studio jem ofron krijimtari, ide të reja, qasje moderne dhe zgjidhje inovative. Jep përshtypje profesionale.
+                        Studio – nënkupton një vend ku krijohen projekte, dizajne, website, grafika ose çdo punë kreative. -->
+            </div>
+            <button
+              id="mobileMenuBtn"
+              class="md:hidden text-white text-2xl focus:outline-none"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+            <ul
+              id="navMenu"
+              class="nav hidden md:flex flex-wrap gap-4 md:gap-[30px] pr-[10px] items-center w-full md:w-auto mt-4 md:mt-0"
+            >
+              <li
+                class="font-bold text-white hover:text-[#3B82F6] transition-colors duration-300 text-sm sm:text-base"
+              >
+                <a href="#home">It's Me</a>
+              </li>
+              <li
+                class="font-bold text-white hover:text-[#3B82F6] transition-colors duration-300 text-sm sm:text-base"
+              >
+                <a href="#about">About Me</a>
+              </li>
+              <li
+                class="font-bold text-white hover:text-[#3B82F6] transition-colors duration-300 text-sm sm:text-base"
+              >
+                <a href="#education">Education</a>
+              </li>
+              <li
+                class="font-bold text-white hover:text-[#3B82F6] transition-colors duration-300 text-sm sm:text-base"
+              >
+                <a href="#projects">Projects</a>
+              </li>
+              <li
+                class="font-bold text-white hover:text-[#3B82F6] transition-colors duration-300 text-sm sm:text-base"
+              >
+                <a href="#testimonails">Testimonails</a>
+              </li>
+              <li
+                class="font-bold text-white hover:text-[#3B82F6] transition-colors duration-300 text-sm sm:text-base"
+              >
+                <a href="#gallery">Gallery</a>
+              </li>
+              <li
+                class="font-bold text-white hover:text-[#3B82F6] transition-colors duration-300 text-sm sm:text-base"
+              >
+                <a href="#skills">Skills</a>
+              </li>
+              <li
+                class="font-bold text-white hover:text-[#3B82F6] transition-colors duration-300 text-sm sm:text-base"
+              >
+                <a href="#contact">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <section id="home" class="relative pt-20 sm:pt-24">
+        <div class="max-w-6xl mx-auto px-4">
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 items-center gap-6 py-8 sm:py-16"
+          >
+            <div
+              class="flex flex-col justify-start self-start text-center md:text-right pr-0 md:pr-4 space-y-4"
+            >
+              <h1
+                class="text-[#E5E7EB] text-2xl sm:text-3xl md:text-5xl font-bold leading-tight"
+              >
+                Hello I'm <br />
+                <span class="text-[#3B82F6]">Fatime Mustafa</span>
+              </h1>
+              <p
+                class="text-base sm:text-lg text-[#94A3B8] leading-relaxed px-4 md:px-0"
+              >
+                <span class="text-[#E5E7EB] font-semibold"
+                  >Front-End Developer</span
+                >, capable of creating clean and understandable websites
+                <br class="hidden md:block" />
+                and collaborating with clients on every detail.
+              </p>
+            </div>
+            <div
+              class="relative overflow-hidden rounded-2xl w-40 h-56 sm:w-48 sm:h-72 md:w-72 md:h-96 group shadow-lg shadow-black/40 mx-auto"
+            >
+              <img
+                class="object-cover w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:brightness-75"
+                src="../assets/images/IMG_9561.jpeg"
+                alt="profile"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-end self-end text-center md:text-left pl-0 md:pl-4"
+            >
+              <h2 class="text-xl sm:text-2xl md:text-4xl font-semibold">
+                Web Developer
+              </h2>
+              <div
+                class="w-16 md:w-20 h-1 bg-[#3B82F6] rounded mt-3 mx-auto md:mx-0"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="py-12">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="relative text-center mb-12">
+            <div
+              class="text-[60px] sm:text-[80px] md:text-[120px] font-black text-white/5 absolute inset-0 flex items-center justify-center select-none"
+            >
+              About
+            </div>
+            <h1
+              class="relative text-2xl sm:text-3xl md:text-5xl font-extrabold"
+            >
+              About <span class="text-[#3B82F6]">Me</span>
+            </h1>
+          </div>
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2
+                class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white mb-4"
+              >
+                My customer service and programming skills.
+              </h2>
+              <p class="mb-4 text-sm sm:text-base">
+                I am a Web Developer with over <strong>6+ months</strong> of
+                experience in this field and I am continuing to develop my
+                skills. In addition to web development, I am now also involved
+                in backend, as a full-stack developer.
+              </p>
+              <p class="mb-8 text-sm sm:text-base">
+                Skilled in work, communication with clients and ready for new
+                knowledge.
+              </p>
+
+              <div class="space-y-3 text-base sm:text-lg">
+                <p>
+                  <span class="font-semibold text-white">Full Name :</span>
+                  Fatime Mustafa
+                </p>
+                <p>
+                  <span class="font-semibold text-white">Age :</span> 18 Years
+                </p>
+                <p>
+                  <span class="font-semibold text-white">Language :</span>
+                  English, German
+                </p>
+                <p>
+                  <span class="font-semibold text-white">Phone :</span> +383
+                  45657740
+                </p>
+                <p>
+                  <span class="font-semibold text-white">Email :</span>
+                  mustafafatime872@gmail.com
+                </p>
+              </div>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-6">
+              <div
+                class="bg-[#0A192F] rounded-2xl p-6 text-center shadow-[0_0_20px_rgba(0,0,0,0.6)] transform transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(0,0,0,0.8)]"
+              >
+                <div class="relative flex justify-center mb-4">
+                  <svg class="w-32 h-32 rotate-[-90deg]">
+                    <circle
+                      class="text-gray-700"
+                      stroke-width="10"
+                      stroke="currentColor"
+                      fill="transparent"
+                      r="50"
+                      cx="64"
+                      cy="64"
+                    />
+                    <circle
+                      class="text-blue-500 progress-circle"
+                      stroke-width="10"
+                      stroke-linecap="round"
+                      stroke="currentColor"
+                      fill="transparent"
+                      r="50"
+                      cx="64"
+                      cy="64"
+                      stroke-dasharray="314"
+                      stroke-dashoffset="314"
+                    />
+                  </svg>
+                  <span
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xl font-bold text-white counter"
+                    data-target="95"
+                    >0%</span
+                  >
+                </div>
+                <h3 class="text-white font-semibold text-lg">HTML/CSS</h3>
+                <p class="text-gray-400 text-sm">Create premium design</p>
+              </div>
+
+              <div
+                class="bg-[#0A192F] rounded-2xl p-6 text-center shadow-[0_0_20px_rgba(0,0,0,0.6)] transform transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(0,0,0,0.8)]"
+              >
+                <div class="relative flex justify-center mb-4">
+                  <svg class="w-32 h-32 rotate-[-90deg]">
+                    <circle
+                      class="text-gray-700"
+                      stroke-width="10"
+                      stroke="currentColor"
+                      fill="transparent"
+                      r="50"
+                      cx="64"
+                      cy="64"
+                    />
+                    <circle
+                      class="text-blue-500 progress-circle"
+                      stroke-width="10"
+                      stroke-linecap="round"
+                      stroke="currentColor"
+                      fill="transparent"
+                      r="50"
+                      cx="64"
+                      cy="64"
+                      stroke-dasharray="314"
+                      stroke-dashoffset="314"
+                    />
+                  </svg>
+                  <span
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xl font-bold text-white counter"
+                    data-target="80"
+                    >0%</span
+                  >
+                </div>
+                <h3 class="text-white font-semibold text-lg">JavaScript</h3>
+                <p class="text-gray-400 text-sm">Web Development</p>
+              </div>
+
+              <div
+                class="bg-[#0A192F] rounded-2xl p-6 text-center shadow-[0_0_20px_rgba(0,0,0,0.6)] transform transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(0,0,0,0.8)]"
+              >
+                <div class="relative flex justify-center mb-4">
+                  <svg class="w-32 h-32 rotate-[-90deg]">
+                    <circle
+                      class="text-gray-700"
+                      stroke-width="10"
+                      stroke="currentColor"
+                      fill="transparent"
+                      r="50"
+                      cx="64"
+                      cy="64"
+                    />
+                    <circle
+                      class="text-blue-500 progress-circle"
+                      stroke-width="10"
+                      stroke-linecap="round"
+                      stroke="currentColor"
+                      fill="transparent"
+                      r="50"
+                      cx="64"
+                      cy="64"
+                      stroke-dasharray="314"
+                      stroke-dashoffset="314"
+                    />
+                  </svg>
+                  <span
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xl font-bold text-white counter"
+                    data-target="80"
+                    >0%</span
+                  >
+                </div>
+                <h3 class="text-white font-semibold text-lg">BackEnd</h3>
+                <p class="text-gray-400 text-sm">Node.js</p>
+              </div>
+
+              <div
+                class="bg-[#0A192F] rounded-2xl p-6 text-center shadow-[0_0_20px_rgba(0,0,0,0.6)] transform transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(0,0,0,0.8)]"
+              >
+                <div class="relative flex justify-center mb-4">
+                  <svg class="w-32 h-32 rotate-[-90deg]">
+                    <circle
+                      class="text-gray-700"
+                      stroke-width="10"
+                      stroke="currentColor"
+                      fill="transparent"
+                      r="50"
+                      cx="64"
+                      cy="64"
+                    />
+                    <circle
+                      class="text-blue-500 progress-circle"
+                      stroke-width="10"
+                      stroke-linecap="round"
+                      stroke="currentColor"
+                      fill="transparent"
+                      r="50"
+                      cx="64"
+                      cy="64"
+                      stroke-dasharray="314"
+                      stroke-dashoffset="314"
+                    />
+                  </svg>
+                  <span
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xl font-bold text-white counter"
+                    data-target="90"
+                    >0%</span
+                  >
+                </div>
+                <h3 class="text-white font-semibold text-lg">Tailwind CSS</h3>
+                <p class="text-gray-400 text-sm">Modern Styling</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <script>
+            const counters = document.querySelectorAll('.counter');
+            const circles = document.querySelectorAll('.progress-circle');
+
+            counters.forEach((counter, index) => {
+            let count = 0;
+            const target = +counter.getAttribute('data-target');
+            const circle = circles[index];
+            const dashArray = 314;
+
+            const updateCounter = () => {
+                if (count < target) {
+                count++;
+                counter.textContent = count + '%';
+                const offset = dashArray - (dashArray * count) / 100;
+                circle.style.strokeDashoffset = offset;
+                requestAnimationFrame(updateCounter);
+                } else {
+                counter.textContent = target + '%';
+                }
+            };
+            updateCounter();
+            });
+        </script> -->
+
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const section = document.querySelector("#about");
+          const counters = document.querySelectorAll(".counter");
+          const circles = document.querySelectorAll(".progress-circle");
+          const dashArray = 314;
+
+          function startAnimation() {
+            counters.forEach((counter, index) => {
+              let count = 0;
+              const target = +counter.getAttribute("data-target");
+              const circle = circles[index];
+
+              circle.style.strokeDashoffset = dashArray;
+              counter.textContent = "0%";
+
+              function update() {
+                if (count < target) {
+                  count++;
+                  counter.textContent = count + "%";
+                  const offset = dashArray - (dashArray * count) / 100;
+                  circle.style.strokeDashoffset = offset;
+                  requestAnimationFrame(update);
+                }
+              }
+              requestAnimationFrame(update);
+            });
+          }
+
+          function resetAnimation() {
+            circles.forEach(
+              (circle) => (circle.style.strokeDashoffset = dashArray)
+            );
+            counters.forEach((counter) => (counter.textContent = "0%"));
+          }
+
+          const observer = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  startAnimation();
+                } else {
+                  resetAnimation();
+                }
+              });
+            },
+            { threshold: 0.4 }
+          );
+
+          observer.observe(section);
+        });
+      </script>
+
+      <section id="education" class="py-12 px-4">
+        <div class="max-w-6xl mx-auto px-4">
+          <div>
+            <div class="relative text-center mb-12">
+              <div
+                class="text-[60px] sm:text-[80px] md:text-[120px] font-black text-white/5 absolute inset-0 flex items-center justify-center select-none"
+              >
+                Resume
+              </div>
+              <h1
+                class="relative text-2xl sm:text-3xl md:text-5xl font-extrabold"
+              >
+                My <span class="text-[#3B82F6] select-none">Education</span>
+              </h1>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div
+                class="bg-[#0a1a34] p-6 rounded-2xl shadow-lg shadow-black/40 hover:-translate-y-1 hover:shadow-xl transition-all"
+              >
+                <div
+                  class="inline-block bg-[#3B82F6] text-white text-xs font-bold uppercase px-4 py-1 rounded-full mb-4"
+                >
+                  March 1, 2025 - PRESENT
+                </div>
+                <h2 class="text-xl font-bold text-[#3B82F6]">
+                  Innovation Academy
+                  <span class="text-white font-normal text-lg ml-2"
+                    >- Course</span
+                  >
+                </h2>
+                <p class="mt-3 text-sm text-gray-400 leading-relaxed">
+                  At iInovation Academy, from day one, I understood what it
+                  means to be valued as a person. In the past 9 months, I have
+                  learned a lot about the world of technology and have been
+                  offered the opportunity to work as an administrator and as a
+                  programming instructor.
+                </p>
+              </div>
+              <div
+                class="bg-[#0a1a34] p-6 rounded-2xl shadow-lg shadow-black/40 hover:-translate-y-1 hover:shadow-xl transition-all"
+              >
+                <div
+                  class="inline-block bg-[#3B82F6] text-white text-xs font-bold uppercase px-4 py-1 rounded-full mb-4"
+                >
+                  September 15, 2025 - Present
+                </div>
+                <h2 class="text-xl font-bold text-[#3B82F6]">
+                  University- Nursing School
+                  <span class="text-white font-normal text-lg ml-2"
+                    >- Experience</span
+                  >
+                </h2>
+                <p class="mt-3 text-sm text-gray-400 leading-relaxed">
+                  At university I am developing my knowledge of medicine and
+                  developing ideas by collecting information to further connect
+                  the world of technology with medicine.
+                </p>
+              </div>
+              <div
+                class="bg-[#0a1a34] p-6 rounded-2xl shadow-lg shadow-black/40 hover:-translate-y-1 hover:shadow-xl transition-all"
+              >
+                <div
+                  class="inline-block bg-[#3B82F6] text-white text-xs font-bold uppercase px-4 py-1 rounded-full mb-4"
+                >
+                  June, 2025- PRESENT
+                </div>
+                <h2 class="text-xl font-bold text-[#3B82F6]">
+                  Certificate - TechLab (Speeex)
+                  <span class="text-white font-normal text-lg ml-2"
+                    >- 6 months</span
+                  >
+                </h2>
+                <p class="mt-3 text-sm text-gray-400 leading-relaxed">
+                  Since June, I have been able to learn what it's like to work
+                  as a programmer, I have strengthened my knowledge, and I have
+                  learned new programming languages, and I am taking a course to
+                  become a full-stack developer.
+                </p>
+              </div>
+              <div
+                class="bg-[#0a1a34] p-6 rounded-2xl shadow-lg shadow-black/40 hover:-translate-y-1 hover:shadow-xl transition-all"
+              >
+                <div
+                  class="inline-block bg-[#3B82F6] text-white text-xs font-bold uppercase px-4 py-1 rounded-full mb-4"
+                >
+                  June, 2025
+                </div>
+                <h2 class="text-xl font-bold text-[#3B82F6]">
+                  Certificate - :DokuFest
+                  <span class="text-white font-normal text-lg ml-2"
+                    >- University- Nursing School</span
+                  >
+                </h2>
+                <p class="mt-3 text-sm text-gray-400 leading-relaxed">
+                  Through workshops and hands-on projects in audiovisual
+                  literacy, digital storytelling, and film production has
+                  demonstrated commitment, creativity, and a willingness to use
+                  film as a tool for social change.
+                </p>
+              </div>
+              <div
+                class="bg-[#0a1a34] p-6 rounded-2xl shadow-lg shadow-black/40 hover:-translate-y-1 hover:shadow-xl transition-all"
+              >
+                <div
+                  class="inline-block bg-[#3B82F6] text-white text-xs font-bold uppercase px-4 py-1 rounded-full mb-4"
+                >
+                  October 3, 2022 - 2025
+                </div>
+                <h2 class="text-xl font-bold text-[#3B82F6]">
+                  Secondary School
+                  <span class="text-white font-normal text-lg ml-2"
+                    >- Second Class</span
+                  >
+                </h2>
+                <p class="mt-3 text-sm text-gray-400 leading-relaxed">
+                  During this period of study I took my first steps towards
+                  professional life. By taking part in many trainings with
+                  different organizations.
+                </p>
+              </div>
+              <div
+                class="bg-[#0a1a34] p-6 rounded-2xl shadow-lg shadow-black/40 hover:-translate-y-1 hover:shadow-xl transition-all"
+              >
+                <div
+                  class="inline-block bg-[#3B82F6] text-white text-xs font-bold uppercase px-4 py-1 rounded-full mb-4"
+                >
+                  September 1, 2013 - 2018
+                </div>
+                <h2 class="text-xl font-bold text-[#3B82F6]">
+                  Primary school
+                  <span class="text-white font-normal text-lg ml-2"
+                    >- Experience</span
+                  >
+                </h2>
+                <p class="mt-3 text-sm text-gray-400 leading-relaxed">
+                  In elementary school I was part of all the sports activities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-12 bg-[#0A192F]">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div
+              class="bg-[#0A192F] shadow-lg shadow-black/40 p-6 sm:p-8 rounded-xl shadow-md text-center hover:translate-y-[-5px] transition-all duration-300"
+            >
+              <div
+                class="flex justify-center mb-4 text-[#3B82F6] text-4xl sm:text-5xl"
+              >
+                <i class="fas fa-pen-nib"></i>
+              </div>
+              <h3 class="text-white font-semibold text-base sm:text-lg mb-2">
+                HTML/CSS
+              </h3>
+              <p class="text-gray-400 text-xs sm:text-sm">
+                "I build clean structures and elegant designs for any type of
+                website."
+              </p>
+            </div>
+            <div
+              class="bg-[#0A192F] shadow-lg shadow-black/40 p-6 sm:p-8 rounded-xl shadow-md text-center hover:translate-y-[-5px] transition-all duration-300"
+            >
+              <div
+                class="flex justify-center mb-4 text-[#3B82F6] text-4xl sm:text-5xl"
+              >
+                <i class="fas fa-desktop"></i>
+              </div>
+              <h3 class="text-white font-semibold text-base sm:text-lg mb-2">
+                Scss
+              </h3>
+              <p class="text-gray-400 text-xs sm:text-sm">
+                "I create dynamic and well-organized styles for easier
+                maintenance."
+              </p>
+            </div>
+            <div
+              class="bg-[#0A192F] shadow-lg shadow-black/40 p-6 sm:p-8 rounded-xl shadow-md text-center hover:translate-y-[-5px] transition-all duration-300"
+            >
+              <div
+                class="flex justify-center mb-4 text-[#3B82F6] text-4xl sm:text-5xl"
+              >
+                <i class="fas fa-code"></i>
+              </div>
+              <h3 class="text-white font-semibold text-base sm:text-lg mb-2">
+                TailWind Css
+              </h3>
+              <p class="text-gray-400 text-xs sm:text-sm">
+                "I develop modern and responsive designs with speed and
+                efficiency."
+              </p>
+            </div>
+            <div
+              class="bg-[#0A192F] shadow-lg shadow-black/40 p-6 sm:p-8 rounded-xl shadow-md text-center hover:translate-y-[-5px] transition-all duration-300"
+            >
+              <div
+                class="flex justify-center mb-4 text-[#3B82F6] text-4xl sm:text-5xl"
+              >
+                <i class="fas fa-search"></i>
+              </div>
+              <h3 class="text-white font-semibold text-base sm:text-lg mb-2">
+                Bootstrap and Responsive
+              </h3>
+              <p class="text-gray-400 text-xs sm:text-sm">
+                "I ensure websites look perfect on every device."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="py-12 bg-[#0A192F]">
+        <div class="max-w-6xl mx-auto px-4">
+          <div>
+            <div class="relative text-center mb-12">
+              <div
+                class="text-[60px] sm:text-[80px] md:text-[120px] font-black text-white/5 absolute inset-0 flex items-center justify-center select-none"
+              >
+                Portfolio
+              </div>
+              <h1
+                class="relative text-2xl sm:text-3xl md:text-5xl font-extrabold"
+              >
+                My <span class="text-[#3B82F6]">Projects</span>
+              </h1>
+            </div>
+            <div class="text-white flex items-start justify-center">
+              <nav class="px-4 md:px-10 py-4 rounded-2xl">
+                <ul
+                  class="flex flex-wrap gap-2 sm:gap-4 md:space-x-12 text-sm sm:text-base md:text-lg font-semibold justify-center"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="text-white hover:text-[#3B82F6] transition-colors duration-300"
+                      >All</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-white hover:text-[#3B82F6] transition-colors duration-300"
+                      >Design</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-white hover:text-[#3B82F6] transition-colors duration-300"
+                      >Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-white hover:text-[#3B82F6] transition-colors duration-300"
+                      >Graphics</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-white hover:text-[#3B82F6] transition-colors duration-300"
+                      >Templates</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="grid lg:grid-cols-2 md:grid-cols-1 gap-6 pt-8">
+              <div
+                class="bg-[#0a1a34] rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.6)] p-4 sm:p-8 w-full max-w-full group cursor-pointer"
+              >
+                <div class="">
+                  <h2 class="text-xl sm:text-[30px] font-[700]">
+                    Chorbi - First experience in programming
+                  </h2>
+                  <h4
+                    class="text-[grey] pt-[5px] pb-[5px] text-sm sm:text-base"
+                  >
+                    2D Design | Templates
+                  </h4>
+                  <p class="text-[15px] text-sm sm:text-base">
+                    The first design that tested the knowledge gained in 3 weeks
+                    in the world of programming.
+                  </p>
+                  <a
+                    class="pt-[4px] pb-[10px] text-[#3B82F6] font-[600] text-sm sm:text-base"
+                    href="http://127.0.0.1:5501/01-website/"
+                    target="_blank"
+                    >Chorbi</a
+                  >
+                </div>
+                <div
+                  class="flex flex-col sm:flex-row justify-start gap-[20px] mt-4"
+                >
+                  <div
+                    class="relative w-full sm:w-[230px] h-[140px] rounded-[10px] overflow-hidden"
+                  >
+                    <img
+                      class="w-full h-full object-cover rounded-[10px] transition-all duration-300 group-hover:scale-105 group-hover:brightness-75"
+                      src="../assets/images/Screenshot 2025-10-11 151804.png"
+                      alt="photo"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center opacity-0 transform scale-90 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100"
+                    >
+                      <span
+                        class="text-white text-3xl font-semibold select-none"
+                        >+</span
+                      >
+                    </div>
+                  </div>
+                  <div class="text-sm leading-[28px]">
+                    <p>
+                      <span class="font-semibold text-white">Full Name :</span>
+                      Fatime Mustafa
+                    </p>
+                    <p>
+                      <span class="font-semibold text-white">Age :</span> 17
+                      Years
+                    </p>
+                    <p>
+                      <span class="font-semibold text-white">Language :</span>
+                      English, German
+                    </p>
+                    <p>
+                      <span class="font-semibold text-white">Phone :</span> +383
+                      45657740
+                    </p>
+                    <p>
+                      <span class="font-semibold text-white">Email :</span>
+                      mustafafatime872@gmail.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-[#0a1a34] rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.6)] p-4 sm:p-8 w-full max-w-full group cursor-pointer"
+              >
+                <div class="">
+                  <h2 class="text-xl sm:text-[30px] font-[700]">
+                    Flori Garten - First project as a real programmer
+                  </h2>
+                  <h4
+                    class="text-[grey] pt-[5px] pb-[5px] text-sm sm:text-base"
+                  >
+                    2D Design | Templates
+                  </h4>
+                  <p class="text-[15px] text-sm sm:text-base">
+                    Flori Garten is a content-free design that I worked on with
+                    bootstrap.
+                  </p>
+                  <a
+                    class="pt-[4px] pb-[10px] text-[#3B82F6] font-[600] text-sm sm:text-base"
+                    href="file:///C:/Users/User/OneDrive/Desktop/FloriGarten/index.html"
+                    target="_blank"
+                    >Flori Garten</a
+                  >
+                </div>
+                <div
+                  class="flex flex-col sm:flex-row justify-start gap-[20px] mt-4"
+                >
+                  <div
+                    class="relative w-full sm:w-[230px] h-[140px] rounded-[10px] overflow-hidden"
+                  >
+                    <img
+                      class="w-full h-full object-cover rounded-[10px] transition-all duration-300 group-hover:scale-105 group-hover:brightness-75"
+                      src="../assets/images/Screenshot 2025-10-11 151926.png"
+                      alt="photo"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center opacity-0 transform scale-90 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100"
+                    >
+                      <span
+                        class="text-white text-3xl font-semibold select-none"
+                        >+</span
+                      >
+                    </div>
+                  </div>
+                  <div class="text-sm leading-[28px]">
+                    <p>
+                      <span class="font-semibold text-white">Full Name :</span>
+                      Fatime Mustafa
+                    </p>
+                    <p>
+                      <span class="font-semibold text-white">Age :</span> 17
+                      Years
+                    </p>
+                    <p>
+                      <span class="font-semibold text-white">Language :</span>
+                      English, German
+                    </p>
+                    <p>
+                      <span class="font-semibold text-white">Phone :</span> +383
+                      45657740
+                    </p>
+                    <p>
+                      <span class="font-semibold text-white">Email :</span>
+                      mustafafatime872@gmail.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-[#0a1a34] rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.6)] p-4 sm:p-8 w-full max-w-full group cursor-pointer"
+              >
+                <div class="">
+                  <h2 class="text-xl sm:text-[30px] font-[700]">
+                    Arome Kosove - Project on the topic of Kosovo.
+                  </h2>
+                  <h4
+                    class="text-[grey] pt-[5px] pb-[5px] text-sm sm:text-base"
+                  >
+                    2D Design | Templates
+                  </h4>
+                  <p class="text-[15px] text-sm sm:text-base">
+                    A project that motivated me to share the natural, cultural
+                    and traditional beauties of Kosovo with the whole world.
+                  </p>
+                  <a
+                    class="pt-[4px] pb-[10px] text-[#3B82F6] font-[600] text-sm sm:text-base"
+                    href="http://127.0.0.1:5501/01-website/"
+                    >Chorbi</a
+                  >
+                </div>
+                <div
+                  class="flex flex-col sm:flex-row justify-start gap-[20px] mt-4"
+                >
+                  <div
+                    class="relative w-full sm:w-[230px] h-[140px] rounded-[10px] overflow-hidden"
+                  >
+                    <img
+                      class="w-full h-full object-cover rounded-[10px] transition-all duration-300 group-hover:scale-105 group-hover:brightness-75"
+                      src="../assets/images/Screenshot 2025-10-11 151651.png"
+                      alt="photo"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center opacity-0 transform scale-90 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100"
+                    >
+                      <span
+                        class="text-white text-3xl font-semibold select-none"
+                        >+</span
+                      >
+                    </div>
+                  </div>
+                  <div class="text-sm leading-[28px]">
+                    <p>
+                      <span class="font-semibold text-white">Full Name :</span>
+                      Fatime Mustafa
+                    </p>
+                    <p>
+                      <span class="font-semibold text-white">Age :</span> 17
+                      Years
+                    </p>
+                    <p>
+                      <span class="font-semibold text-white">Language :</span>
+                      English, German
+                    </p>
+                    <p>
+                      <span class="font-semibold text-white">Phone :</span> +383
+                      45657740
+                    </p>
+                    <p>
+                      <span class="font-semibold text-white">Email :</span>
+                      mustafafatime872@gmail.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-[#0a1a34] rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.6)] p-4 sm:p-8 w-full max-w-full group cursor-pointer"
+              >
+                <div class="">
+                  <h2 class="text-xl sm:text-[30px] font-[700]">
+                    Car Maxel - Project for a business that sells luxury cars.
+                  </h2>
+                  <h4
+                    class="text-[grey] pt-[5px] pb-[5px] text-sm sm:text-base"
+                  >
+                    2D Design | Templates
+                  </h4>
+                  <p class="text-[15px] text-sm sm:text-base">
+                    This is the biggest project I've worked on so far. I did it
+                    out of a great passion for cars. And considering that it's a
+                    very profitable business.
+                  </p>
+                  <a
+                    class="pt-[4px] pb-[10px] text-[#3B82F6] font-[600] text-sm sm:text-base"
+                    href="../CarMaxel/index.html"
+                    target="_blank"
+                    >Car Maxel</a
+                  >
+                </div>
+                <div
+                  class="flex flex-col sm:flex-row justify-start gap-[20px] mt-4"
+                >
+                  <div
+                    class="relative w-full sm:w-[230px] h-[140px] rounded-[10px] overflow-hidden"
+                  >
+                    <img
+                      class="w-full h-full object-cover rounded-[10px] transition-all duration-300 group-hover:scale-105 group-hover:brightness-75"
+                      src="../assets/images/Screenshot 2025-10-11 150816.png"
+                      alt="photo"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center opacity-0 transform scale-90 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100"
+                    >
+                      <span
+                        class="text-white text-3xl font-semibold select-none"
+                        >+</span
+                      >
+                    </div>
+                  </div>
+                  <div class="text-sm leading-[28px]">
+                    <p>
+                      <span class="font-semibold text-white">Full Name :</span>
+                      Fatime Mustafa
+                    </p>
+                    <p>
+                      <span class="font-semibold text-white">Age :</span> 17
+                      Years
+                    </p>
+                    <p>
+                      <span class="font-semibold text-white">Language :</span>
+                      English, German
+                    </p>
+                    <p>
+                      <span class="font-semibold text-white">Phone :</span> +383
+                      45657740
+                    </p>
+                    <p>
+                      <span class="font-semibold text-white">Email :</span>
+                      mustafafatime872@gmail.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="statistics" class="py-16 bg-[#0A192F]">
+        <div class="container max-w-[1200px] m-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div
+              class="bg-[#0A192F] shadow-lg shadow-black/40 p-8 rounded-xl shadow-md text-center hover:translate-y-[-5px] transition-all duration-300"
+            >
+              <h3 class="text-[#94A3B8] text-[36px] sm:text-[52px] font-[800]">
+                1+
+              </h3>
+              <p class="text-[#fff] text-base sm:text-[20px]">Clients</p>
+            </div>
+            <div
+              class="bg-[#0A192F] shadow-lg shadow-black/40 p-6 sm:p-8 rounded-xl shadow-md text-center hover:translate-y-[-5px] transition-all duration-300"
+            >
+              <h3 class="text-[#94A3B8] text-[36px] sm:text-[52px] font-[800]">
+                6+
+              </h3>
+              <p class="text-[#fff] text-base sm:text-[20px]">Projects</p>
+            </div>
+            <div
+              class="bg-[#0A192F] shadow-lg shadow-black/40 p-6 sm:p-8 rounded-xl shadow-md text-center hover:translate-y-[-5px] transition-all duration-300"
+            >
+              <h3 class="text-[#3B82F6] text-[36px] sm:text-[52px] font-[800]">
+                7+
+              </h3>
+              <p class="text-[#fff] text-base sm:text-[20px]">
+                Programming Language
+              </p>
+            </div>
+            <div
+              class="bg-[#0A192F] shadow-lg shadow-black/40 p-6 sm:p-8 rounded-xl shadow-md text-center hover:translate-y-[-5px] transition-all duration-300"
+            >
+              <h3 class="text-[#94A3B8] text-[36px] sm:text-[52px] font-[800]">
+                5+
+              </h3>
+              <p class="text-[#fff] text-base sm:text-[20px]">
+                Awards Achieved
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonails" class="bg-[#0A192F] py-16">
+        <div class="container max-w-[1200px] m-auto">
+          <div class="relative text-center mt-[40px] mb-[40px]">
+            <div
+              class="text-[60px] sm:text-[120px] font-black text-white/5 absolute inset-0 flex items-center justify-center select-none"
+            >
+              Testimonails
+            </div>
+            <h1 class="relative text-3xl sm:text-5xl font-extrabold">
+              What <span class="text-[#3B82F6]">People</span> Say
+            </h1>
+          </div>
+          <div
+            class="container mt-[40px] sm:mt-[100px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 justify-items-center"
+          >
+            <div class="flex flex-col items-center text-center max-w-xs">
+              <div
+                class="relative w-40 h-40 rounded-full overflow-hidden mb-4 group shadow-lg shadow-black/40 mx-auto"
+              >
+                <img
+                  src="../assets/images/IMG_0173.jpg"
+                  alt="person1"
+                  class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:brightness-75"
+                />
+              </div>
+              <h2 class="text-[#94A3B8] mb-[20px]">Full Stack Development</h2>
+              <button
+                onclick="toggleText('text1')"
+                class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full transition duration-300"
+              >
+                What Ardi Say?
+              </button>
+              <p id="text1" class="mt-4 hidden leading-relaxed">
+                Kur ideja edhe puna e palodhshme behen bashk, atehere ideja nuk
+                mbetet vetem nje mendim, ajo kthehet ne realitet, ajo qka e
+                dallon njeriun eshte diciplina dhe vizioni qe ndjek me
+                perkushtim, keto cilesi e bejne Fatimen si studente me potencial
+                te madh.
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center text-center max-w-xs">
+              <div
+                class="relative w-40 h-40 rounded-full overflow-hidden mb-4 group shadow-lg shadow-black/40 mx-auto"
+              >
+                <img
+                  src="../assets/images/IMG_0174.jpg"
+                  alt="person2"
+                  class="flex flex-col justify-end w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:brightness-75"
+                />
+              </div>
+              <h2 class="text-[#94A3B8] mb-[20px]">Full Stack Development</h2>
+              <button
+                onclick="toggleText('text2')"
+                class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full transition duration-300"
+              >
+                What Hyseni Say?
+              </button>
+              <p id="text2" class="mt-4 hidden leading-relaxed">
+                Fatime Mustafa është dalluar si një nxënëse shembullore në
+                kursin Front-End Development me HTML, CSS, JavaScript dhe React.
+                Ajo ka treguar profesionalizëm, kreativitet dhe aftësi të
+                shkëlqyera praktike, duke zhvilluar projekte me kod të pastër,
+                dizajn modern dhe zgjidhje funksionale e inovative.
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center text-center max-w-xs">
+              <div
+                class="relative w-40 h-40 rounded-full overflow-hidden mb-4 group shadow-lg shadow-black/40 mx-auto"
+              >
+                <img
+                  src="../assets/images/IMG_0208.JPG"
+                  alt="person3"
+                  class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:brightness-75"
+                />
+              </div>
+              <h2 class="text-[#94A3B8] mb-[20px]">
+                Employment Coach and Advisor
+              </h2>
+              <button
+                onclick="toggleText('text3')"
+                class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full transition duration-300"
+              >
+                What Lirija Say?
+              </button>
+              <p id="text3" class="mt-4 hidden leading-relaxed">
+                Me shumë kënaqësi dua të shpreh mirënjohjen time për Fatimen, e
+                cila gjatë trajnimit “Shkathtësi Bazë Jetësore dhe
+                Punësueshmëri” u dallua për përkushtimin dhe pjesëmarrjen e saj
+                të jashtëzakonshme. Ajo mori pjesë në çdo sesion, ishte
+                gjithmonë në kohë dhe tregoi energji pozitive, dëshirë të madhe
+                për të mësuar dhe për t’u zhvilluar. Gjatë gjithë trajnimit, ajo
+                ishte shumë aktive dhe solli ide të vlefshme që pasuruan
+                përvojën e grupit. Edhe pas përfundimit të trajnimit, ajo
+                vazhdoi të jetë e angazhuar dhe e përfshirë në aktivitetet
+                pasuese, duke treguar pjekuri, përgjegjësi dhe vullnet të fortë
+                për të ecur përpara. Jam vërtet krenare për zhvillimin e saj
+                personal dhe profesional, dhe besoj me gjithë zemër se ajo ka
+                një të ardhme të ndritur përpara.
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center text-center max-w-xs">
+              <div
+                class="relative w-40 h-40 rounded-full overflow-hidden mb-4 group shadow-lg shadow-black/40 mx-auto"
+              >
+                <img
+                  src="../assets/images/IMG_0118.jpg"
+                  alt="person4"
+                  class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:brightness-75"
+                />
+              </div>
+              <h2 class="text-[#94A3B8] mb-[20px]">Director General</h2>
+              <button
+                onclick="toggleText('text4')"
+                class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full transition duration-300"
+              >
+                What Rexhepi Say?
+              </button>
+              <p id="text4" class="mt-4 hidden leading-relaxed">
+                Fatime Mustafa ka qenë një bashkëpunëtore e përkushtuar dhe
+                shumë profesionale gjatë zhvillimit të trajnimeve dhe
+                aktiviteteve të tjera të organizatës. Ajo ka treguar aftësi të
+                shkëlqyera komunikuese, përgjegjësi të lartë në detyra dhe
+                gatishmëri për bashkëpunim në çdo fazë të procesit. Kontributi i
+                saj ka ndikuar pozitivisht në realizimin me sukses të
+                aktiviteteve dhe në krijimin e një atmosfere të mirëbashkëpunimi
+                mes pjesëmarrësve.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        function toggleText(id) {
+          const text = document.getElementById(id);
+          text.classList.toggle("hidden");
+        }
+
+        // Mobile menu toggle
+        document.addEventListener("DOMContentLoaded", () => {
+          const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+          const navMenu = document.getElementById("navMenu");
+
+          if (mobileMenuBtn && navMenu) {
+            mobileMenuBtn.addEventListener("click", () => {
+              navMenu.classList.toggle("hidden");
+              const icon = mobileMenuBtn.querySelector("i");
+              if (icon) {
+                if (navMenu.classList.contains("hidden")) {
+                  icon.classList.remove("fa-times");
+                  icon.classList.add("fa-bars");
+                } else {
+                  icon.classList.remove("fa-bars");
+                  icon.classList.add("fa-times");
+                }
+              }
+            });
+          }
+        });
+      </script>
+
+      <section id="gallery" class="#0A192F">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="shadow-md rounded-lg p-6">
+            <div
+              class="flex flex-col md:flex-row items-center justify-between mb-6 gap-4"
+            >
+              <div
+                class="text-lg sm:text-xl md:text-3xl text-white font-['EB_Garamond'] text-center md:text-left"
+              >
+                <h1>
+                  This is my collection of moments that I want to share with
+                  you.
+                </h1>
+              </div>
+              <button
+                id="toggleBtn"
+                class="px-4 sm:px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition text-sm sm:text-base"
+              >
+                View My Gallery
+              </button>
+            </div>
+
+            <div
+              id="imageContainer"
+              class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"
+            >
+              <img
+                src="../assets/images/50092881-2139-4BAA-BDDD-33E0BC7469D5.JPG"
+                alt="Foto 1"
+                class="w-full h-70 object-cover hidden rounded"
+              />
+              <img
+                src="../assets/images/IMG_5748.jpg"
+                alt="Foto 2"
+                class="w-full h-70 object-cover hidden rounded"
+              />
+              <img
+                src="../assets/images/IMG_3280.JPG"
+                alt="Foto 3"
+                class="w-full h-70 object-cover hidden rounded"
+              />
+              <img
+                src="../assets/images/IMG_6537.jpg"
+                alt="Foto 4"
+                class="w-full h-70 object-cover hidden rounded"
+              />
+              <img
+                src="../assets/images/IMG_0104 (1).jpeg"
+                alt="Foto 4"
+                class="w-full h-70 object-cover hidden rounded"
+              />
+              <img
+                src="../assets/images/IMG_0105 (1).jpeg"
+                alt="Foto 4"
+                class="w-full h-70 object-cover hidden rounded"
+              />
+              <img
+                src="../assets/images/IMG_0106 (1).jpeg"
+                alt="Foto 4"
+                class="w-full h-70 object-cover hidden rounded"
+              />
+              <img
+                src="../assets/images/IMG_0107 (1).jpeg"
+                alt="Foto 4"
+                class="w-full h-70 object-cover hidden rounded"
+              />
+              <img
+                src="../assets/images/IMG_0108 (1).jpeg"
+                alt="Foto 4"
+                class="w-full h-70 object-cover hidden rounded"
+              />
+              <img
+                src="../assets/images/IMG_0843.jpg"
+                alt="Foto 4"
+                class="w-full h-70 object-cover hidden rounded"
+              />
+              <img
+                src="../assets/images/IMG_0842.jpg"
+                alt="Foto 4"
+                class="w-full h-70 object-cover hidden rounded"
+              />
+              <img
+                src="../assets/images/IMG_1526.jpg"
+                alt="Foto 4"
+                class="w-full h-70 object-cover hidden rounded"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        const btn = document.getElementById("toggleBtn");
+        const images = document.querySelectorAll("#imageContainer img");
+
+        btn.addEventListener("click", () => {
+          images.forEach((img) => {
+            img.classList.toggle("hidden");
+          });
+        });
+      </script>
+
+      <section id="skills" class="">
+        <div class="">
+          <div class="bg-[#0A192F] relative text-center mb-16 p-8">
+            <div
+              class="text-[60px] sm:text-[120px] font-black text-white/5 absolute inset-0 flex items-center justify-center select-none"
+            >
+              My Skills
+            </div>
+            <h1 class="relative text-3xl sm:text-5xl font-extrabold">
+              My <span class="text-[#3B82F6]">Skills</span>
+            </h1>
+          </div>
+          <div
+            class="flex flex-wrap justify-center sm:justify-between bg-[#fff] p-3 sm:p-5 gap-4"
+          >
+            <img
+              class="w-[90px] sm:w-[180px] h-[65px] sm:h-[130px] object-contain"
+              src="../assets/images/html.png"
+              alt="#"
+            />
+            <img
+              class="w-[70px] sm:w-[135px] h-[70px] sm:h-[135px] object-contain"
+              src="../assets/images/css.png"
+              alt="#"
+            />
+            <img
+              class="w-[100px] sm:w-[200px] h-[75px] sm:h-[150px] object-contain"
+              src="../assets/images/js.png"
+              alt="#"
+            />
+            <img
+              class="w-[100px] sm:w-[200px] h-[75px] sm:h-[150px] object-contain"
+              src="../assets/images/GitHub.jpg"
+              alt="#"
+            />
+            <img
+              class="w-[100px] sm:w-[200px] h-[75px] sm:h-[150px] object-contain"
+              src="../assets/images/node.js-logo-image.png"
+              alt="#"
+            />
+            <img
+              class="w-[100px] sm:w-[200px] h-[75px] sm:h-[150px] object-contain"
+              src="../assets/images//tailwindd.png"
+              alt="#"
+            />
+          </div>
+          <div
+            class="flex flex-wrap justify-center sm:justify-between bg-[#fff] p-3 sm:p-5 gap-4"
+          >
+            <img
+              class="w-[100px] sm:w-[200px] h-[75px] sm:h-[150px] object-contain"
+              src="../assets/images/mongodb.webp"
+              alt="#"
+            />
+            <img
+              class="w-[100px] sm:w-[200px] h-[75px] sm:h-[150px] object-contain"
+              src="../assets/images/figma.png"
+              alt="#"
+            />
+            <img
+              class="w-[100px] sm:w-[200px] h-[75px] sm:h-[150px] object-contain"
+              src="../assets/images/postman-api-platform-logo-png_seeklogo-446859.png"
+              alt="#"
+            />
+            <img
+              class="w-[75px] sm:w-[150px] h-[50px] sm:h-[100px] object-contain"
+              src="../assets/images/sass.png"
+              alt="#"
+            />
+            <img
+              class="w-[100px] sm:w-[200px] h-[75px] sm:h-[150px] object-contain"
+              src="../assets/images/react.png"
+              alt="#"
+            />
+            <img
+              class="w-[100px] sm:w-[200px] h-[75px] sm:h-[150px] object-contain"
+              src="../assets/images/bootstrap.jpg"
+              alt="#"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="bg-[#0A192F] py-16">
+        <div
+          class="container mx-auto max-w-[1200px] px-6 grid md:grid-cols-2 gap-10"
+        >
+          <div class="space-y-6">
+            <div
+              class="bg-[#0A192F] p-6 rounded-2xl flex items-start gap-4 rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.6)] p-8"
+            >
+              <div class="text-white text-3xl">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <h3 class="text-white font-semibold text-lg mb-1">
+                  Mail & Website
+                </h3>
+                <p class="text-gray-400 text-sm flex items-center gap-2">
+                  <i class="fa-regular fa-envelope text-[#a4a4a4]"></i>
+                  mustafafatime872@gmail.com
+                </p>
+                <p class="text-gray-400 text-sm flex items-center gap-2">
+                  <i class="fa-solid fa-globe text-[#a4a4a4]"></i>
+                  www.yourdomain.com
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-[#0A192F] p-6 rounded-2xl flex items-start gap-4 rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.6)] p-8"
+            >
+              <div class="text-white text-3xl">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <h3 class="text-white font-semibold text-lg mb-1">Contact</h3>
+                <p class="text-gray-400 text-sm flex items-center gap-2">
+                  <i class="fa-solid fa-mobile-screen text-[#a4a4a4]"></i>
+                  (+383)-45657740
+                </p>
+                <p class="text-gray-400 text-sm flex items-center gap-2">
+                  <i class="fa-solid fa-mobile-screen text-[#a4a4a4]"></i>
+                  (+383)-45657740
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-[#0A192F] p-6 rounded-2xl flex items-start gap-4 rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.6)] p-8"
+            >
+              <div class="text-white text-3xl">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h3 class="text-white font-semibold text-lg mb-1">Address</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  Vushtrri, Kosova.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-5">
+            <input
+              type="text"
+              placeholder="Full Name"
+              class="w-full bg-[#0A192F] text-gray-300 p-3 rounded-xl outline-none focus:ring-2 focus:ring-blue-600 transition rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.6)]"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              class="w-full bg-[#0A192F] text-gray-300 p-3 rounded-xl outline-none focus:ring-2 focus:ring-blue-600 transition rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.6)]"
+            />
+            <input
+              type="text"
+              placeholder="Phone"
+              class="w-full bg-[#0A192F] text-gray-300 p-3 rounded-xl outline-none focus:ring-2 focus:ring-blue-600 transition rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.6)]"
+            />
+            <textarea
+              rows="4"
+              placeholder="Message"
+              class="w-full bg-[#0A192F] text-gray-300 p-3 rounded-xl outline-none focus:ring-2 focus:ring-blue-600 transition rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.6)]"
+            ></textarea>
+
+            <button
+              class="flex items-center gap-2 text-white font-medium px-6 py-2 border border-gray-400 rounded-full hover:bg-blue-600 transition"
+            >
+              <i class="fa-solid fa-arrow-right"></i> Submit
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-[#0A192F] text-gray-300 py-6">
+        <div class="container max-w-[1200px] m-auto">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-center md:text-left text-sm">
+              ©
+              <span class="text-blue-500 font-medium">Fatime Mustafa</span>
+              • Want to collaborate? Contact:
+              <span class="text-blue-500 font-medium"
+                ><a href="mailto:mustafafatime872@gmail.com"
+                  >mustafafatime872@gmail.com</a
+                ></span
+              >
+            </p>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+              <a
+                href="https://www.facebook.com/fatime.mustafa.948"
+                class="bg-blue-500 text-white rounded-full px-5 py-3 hover:bg-blue-600 hover:scale-110 transition-all duration-300"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/fatiime.mustafaa/?hl=en"
+                class="bg-blue-500 text-white rounded-full px-4 py-3 hover:bg-blue-600 hover:scale-110 transition-all duration-300"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://github.com/fatimemustafa"
+                class="bg-blue-500 text-white rounded-full px-4 py-3 hover:bg-blue-600 hover:scale-110 transition-all duration-300"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://discord.com/channels/@me"
+                class="bg-blue-500 text-white rounded-full px-4 py-3 hover:bg-blue-600 hover:scale-110 transition-all duration-300"
+              >
+                <i class="fa-brands fa-discord"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
